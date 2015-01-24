@@ -16,5 +16,9 @@ before_install:
   - nvm ls-remote 
   - echo $CORDOVA_VERSION
   - echo $NODE_VERSION
+  - nvm install $NODE_VERSION
+  - nvm use $NODE_VERSION
+  - npm update -g
+  - npm install cordova@$CORDOVA_VERSION
 script:
   - echo test
