@@ -14,5 +14,7 @@ before_install:
   - npm --version
   - nvm ls
   - nvm ls-remote 
+  - echo $CORDOVA_VERSION
+  - echo $NODE_VERSION
 script:
   - echo test
