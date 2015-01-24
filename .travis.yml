@@ -12,5 +12,7 @@ before_install:
   - nvm --version
   - node --version
   - npm --version
+  - nvm ls
+  - nvm ls-remote 
 script:
   - echo test
