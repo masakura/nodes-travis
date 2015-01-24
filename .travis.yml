@@ -1,0 +1,16 @@
+language: android
+android:
+  components:
+    - build-tools-20.0.0
+    - android-19
+env:
+  - CORDOVA_VERSION=4.0.0 NODE_VERSION=0.10
+  - CORDOVA_VERSION=4.2.0 NODE_VERSION=0.10
+  - CORDOVA_VERSION=4.0.0 NODE_VERSION=0.11
+  - CORDOVA_VERSION=4.2.0 NODE_VERSION=0.11
+before_install:
+  - nvm --version
+  - node --version
+  - npm --version
+script:
+  - npm test
