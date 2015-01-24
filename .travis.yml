@@ -9,9 +9,6 @@ env:
   - CORDOVA_VERSION=4.0.0 NODE_VERSION=0.11
   - CORDOVA_VERSION=4.2.0 NODE_VERSION=0.11
 before_install:
-  - nvm --version
-  - node --version
-  - npm --version
   - nvm ls
   - nvm ls-remote 
   - echo $CORDOVA_VERSION
@@ -20,5 +17,9 @@ before_install:
   - nvm use $NODE_VERSION
   - npm update -g
   - npm install cordova@$CORDOVA_VERSION
+  - nvm --version
+  - node --version
+  - npm --version
+  - cordova --version
 script:
   - echo test
